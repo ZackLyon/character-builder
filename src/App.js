@@ -5,14 +5,15 @@ import './App.css';
 
 function App() {
   const [head, setHead] = useState('');
+  const [middle, setMiddle] = useState('');
 
   return (
     <div className='App'>
       <header className='App-header'>
         <h1>Character Builder</h1>
       </header>
-      <Choices {...{ head, setHead }} />
-      <Character {...{ head }} />
+      <Choices {...{ head, setHead, middle, setMiddle }} />
+      <Character {...{ head, middle }} />
     </div>
   );
 }

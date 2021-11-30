@@ -1,6 +1,20 @@
-.head {
+.character {
+  display: flex;
+  flex-direction: column;
+}
+
+.head,
+.middle {
   width: 200px;
-  height: 200px;
+
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.head {
+  height: 200px;
+}
+
+.middle {
+  height: 300px;
 }
