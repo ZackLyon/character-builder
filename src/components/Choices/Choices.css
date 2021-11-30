@@ -1,0 +1,8 @@
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  margin-left: 1vw;
+}

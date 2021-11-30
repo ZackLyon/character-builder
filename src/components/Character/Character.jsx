@@ -1,7 +1,7 @@
 import React from 'react';
 import './Character.css';
 
-export default function Character({ head, middle }) {
+export default function Character({ head, middle, leg }) {
   return (
     <div className='character'>
       <div
@@ -11,6 +11,10 @@ export default function Character({ head, middle }) {
       <div
         className='middle'
         style={{ backgroundImage: `url(${middle}-middle.png)` }}
+      ></div>
+      <div
+        className='legs'
+        style={{ backgroundImage: `url(${leg}-pants.png)` }}
       ></div>
     </div>
   );

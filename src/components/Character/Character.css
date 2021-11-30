@@ -4,7 +4,8 @@
 }
 
 .head,
-.middle {
+.middle,
+.legs {
   width: 200px;
 
   background-size: contain;
@@ -13,8 +14,14 @@
 
 .head {
   height: 200px;
+  margin-bottom: -5px;
 }
 
-.middle {
+.middle,
+.legs {
   height: 300px;
+}
+
+.legs {
+  margin-top: -60px;
 }
