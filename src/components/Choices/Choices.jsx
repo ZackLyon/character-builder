@@ -8,16 +8,37 @@ export default function Choices({
   setMiddle,
   leg,
   setLeg,
+  headCount,
+  setHeadCount,
+  middleCount,
+  setMiddleCount,
+  legCount,
+  setLegCount,
 }) {
   const heads = ['angry', 'cracked', 'crazy', 'happy', 'neutral'];
   const middles = ['blue', 'fancy', 'pink', 'red'];
   const legs = ['blue', 'dog', 'leg', 'white'];
 
+  const onHeadChange = (e) => {
+    setHead(e.target.value);
+    setHeadCount((prev) => prev + 1);
+  };
+
+  const onMiddleChange = (e) => {
+    setMiddle(e.target.value);
+    setMiddleCount((prev) => prev + 1);
+  };
+
+  const onLegChange = (e) => {
+    setLeg(e.target.value);
+    setLegCount((prev) => prev + 1);
+  };
+
   return (
     <div className='choices'>
       <label>
         Heads:
-        <select value={head} onChange={(e) => setHead(e.target.value)}>
+        <select value={head} onChange={(e) => onHeadChange(e)}>
           {heads.map((headOption) => (
             <option key={headOption}>{headOption}</option>
           ))}
@@ -26,7 +47,7 @@ export default function Choices({
 
       <label>
         Middles:
-        <select value={middle} onChange={(e) => setMiddle(e.target.value)}>
+        <select value={middle} onChange={(e) => onMiddleChange(e)}>
           {middles.map((middleOption) => (
             <option key={middleOption}>{middleOption}</option>
           ))}
@@ -35,7 +56,7 @@ export default function Choices({
 
       <label>
         Legs:
-        <select value={leg} onChange={(e) => setLeg(e.target.value)}>
+        <select value={leg} onChange={(e) => onLegChange(e)}>
           {legs.map((legsOption) => (
             <option key={legsOption}>{legsOption}</option>
           ))}

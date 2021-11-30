@@ -1,4 +1,5 @@
-.choices {
+.choices,
+.counts {
   display: flex;
   flex-direction: column;
 }
