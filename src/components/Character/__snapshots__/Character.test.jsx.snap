@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display the character on the screen 1`] = `
+<div>
+  <div
+    class="character"
+  >
+    <div
+      class="head"
+      style="background-image: url(angry-head.png);"
+    />
+    <div
+      class="middle"
+      style="background-image: url(blue-middle.png);"
+    />
+    <div
+      class="legs"
+      style="background-image: url(dog-pants.png);"
+    />
+  </div>
+</div>
+`;

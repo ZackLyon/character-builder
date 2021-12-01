@@ -13,8 +13,6 @@ export default function Choices({
   setLegCount,
   currentPhrase,
   setCurrentPhrase,
-  catchPhrases,
-  setCatchPhrases,
   handleClick,
 }) {
   const heads = ['angry', 'cracked', 'crazy', 'happy', 'neutral'];

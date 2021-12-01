@@ -16,7 +16,7 @@ export default function Content({
       </div>
       Check out my snappy catch phrases:
       {catchPhrases.map((phrase) => (
-        <div>"{phrase}"</div>
+        <div key={phrase}>"{phrase}"</div>
       ))}
     </div>
   );

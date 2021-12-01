@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display the choices on the screen 1`] = `
+<div>
+  <div
+    class="choices"
+  >
+    <label>
+      Heads:
+      <select>
+        <option>
+          angry
+        </option>
+        <option>
+          cracked
+        </option>
+        <option>
+          crazy
+        </option>
+        <option>
+          happy
+        </option>
+        <option>
+          neutral
+        </option>
+      </select>
+    </label>
+    <label>
+      Middles:
+      <select>
+        <option>
+          blue
+        </option>
+        <option>
+          fancy
+        </option>
+        <option>
+          pink
+        </option>
+        <option>
+          red
+        </option>
+      </select>
+    </label>
+    <label>
+      Legs:
+      <select>
+        <option>
+          blue
+        </option>
+        <option>
+          dog
+        </option>
+        <option>
+          leg
+        </option>
+        <option>
+          white
+        </option>
+      </select>
+    </label>
+    <label>
+      Catch Phrase:
+      <input
+        type="text"
+        value=""
+      />
+      <button
+        type="button"
+      >
+        Submit
+      </button>
+    </label>
+  </div>
+</div>
+`;

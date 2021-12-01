@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display the content on the screen 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <div
+      class="counts"
+    >
+      <div>
+        The head has been changed: 
+        3
+         times.
+      </div>
+      <div>
+        The middle has been changed: 
+        2
+         times.
+      </div>
+      <div>
+        The legs have been changed: 
+        5
+         times.
+      </div>
+    </div>
+    Check out my snappy catch phrases:
+    <div>
+      "
+      something
+      "
+    </div>
+    <div>
+      "
+      something else
+      "
+    </div>
+  </div>
+</div>
+`;

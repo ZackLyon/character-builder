@@ -36,8 +36,6 @@ function App() {
           setLegCount,
           currentPhrase,
           setCurrentPhrase,
-          catchPhrases,
-          setCatchPhrases,
           handleClick,
         }}
       />
