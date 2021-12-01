@@ -8,12 +8,14 @@ export default function Choices({
   setMiddle,
   leg,
   setLeg,
-  headCount,
   setHeadCount,
-  middleCount,
   setMiddleCount,
-  legCount,
   setLegCount,
+  currentPhrase,
+  setCurrentPhrase,
+  catchPhrases,
+  setCatchPhrases,
+  handleClick,
 }) {
   const heads = ['angry', 'cracked', 'crazy', 'happy', 'neutral'];
   const middles = ['blue', 'fancy', 'pink', 'red'];
@@ -61,6 +63,18 @@ export default function Choices({
             <option key={legsOption}>{legsOption}</option>
           ))}
         </select>
+      </label>
+
+      <label>
+        Catch Phrase:
+        <input
+          type='text'
+          value={currentPhrase}
+          onChange={(e) => setCurrentPhrase(e.target.value)}
+        />
+        <button type='button' onClick={handleClick}>
+          Submit
+        </button>
       </label>
     </div>
   );

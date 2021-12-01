@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Choices from './components/Choices/Choices';
 import Character from './components/Character/Character';
+import Content from './components/Content/Content';
 import './App.css';
 
 function App() {
@@ -10,6 +11,12 @@ function App() {
   const [headCount, setHeadCount] = useState(0);
   const [middleCount, setMiddleCount] = useState(0);
   const [legCount, setLegCount] = useState(0);
+  const [currentPhrase, setCurrentPhrase] = useState('');
+  const [catchPhrases, setCatchPhrases] = useState([]);
+
+  const handleClick = () => {
+    setCatchPhrases((prev) => [...prev, currentPhrase]);
+  };
 
   return (
     <div className='App'>
@@ -24,15 +31,18 @@ function App() {
           setMiddle,
           leg,
           setLeg,
-          headCount,
           setHeadCount,
-          middleCount,
           setMiddleCount,
-          legCount,
           setLegCount,
+          currentPhrase,
+          setCurrentPhrase,
+          catchPhrases,
+          setCatchPhrases,
+          handleClick,
         }}
       />
-      <Character {...{ head, middle, leg, headCount, middleCount, legCount }} />
+      <Character {...{ head, middle, leg }} />
+      <Content {...{ catchPhrases, headCount, middleCount, legCount }} />
     </div>
   );
 }
