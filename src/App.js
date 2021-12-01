@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Choices from './components/Choices/Choices';
+import Character from './components/Character/Character';
+import Content from './components/Content/Content';
 import './App.css';
 
 function App() {
+  const [head, setHead] = useState('angry');
+  const [middle, setMiddle] = useState('blue');
+  const [leg, setLeg] = useState('dog');
+  const [headCount, setHeadCount] = useState(0);
+  const [middleCount, setMiddleCount] = useState(0);
+  const [legCount, setLegCount] = useState(0);
+  const [currentPhrase, setCurrentPhrase] = useState('');
+  const [catchPhrases, setCatchPhrases] = useState([]);
+
+  const handleClick = () => {
+    setCatchPhrases((prev) => [...prev, currentPhrase]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <h1>Character Builder</h1>
       </header>
+      <Choices
+        {...{
+          head,
+          setHead,
+          middle,
+          setMiddle,
+          leg,
+          setLeg,
+          setHeadCount,
+          setMiddleCount,
+          setLegCount,
+          currentPhrase,
+          setCurrentPhrase,
+          handleClick,
+        }}
+      />
+      <Character {...{ head, middle, leg }} />
+      <Content {...{ catchPhrases, headCount, middleCount, legCount }} />
     </div>
   );
 }

@@ -1,0 +1,28 @@
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.head,
+.middle,
+.legs {
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.head {
+  height: 200px;
+  margin-bottom: -5px;
+}
+
+.middle,
+.legs {
+  height: 300px;
+}
+
+.legs {
+  margin-top: -60px;
+}

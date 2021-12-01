@@ -1,0 +1,15 @@
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+
+select,
+input {
+  margin-left: 1vw;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border: none;
+}
